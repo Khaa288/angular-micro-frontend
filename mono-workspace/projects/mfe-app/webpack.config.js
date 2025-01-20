@@ -5,11 +5,10 @@ module.exports = withModuleFederationPlugin({
   name: 'mfe-app',
 
   exposes: {
-    './Component': './projects/mfe-app/src/app/app.component.ts',
+    './TodoComponent': './projects/mfe-app/src/app/todo/todo.component.ts',
   },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },
-
 });
